@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marca Personal x10 — Haz crecer tu LinkedIn con IA</title>
+    <meta name="description" content="Aprende a potenciar tu marca personal en LinkedIn usando inteligencia artificial. Únete a nuestra comunidad gratuita en WhatsApp.">
+    <meta property="og:title" content="Marca Personal x10 — LinkedIn + IA">
+    <meta property="og:description" content="Estrategias con IA para hacer crecer tu LinkedIn. Comunidad gratuita.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://marcapersonalx10.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <style>
+        *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+        html { scroll-behavior: smooth; }
+        body { font-family: 'Inter', sans-serif; background: #0a0a0a; color: #e0e0e0; line-height: 1.6; overflow-x: hidden; }
+        .bg-glow { position: fixed; top: -50%; left: -50%; width: 200%; height: 200%; background: radial-gradient(circle at 30% 40%, rgba(0, 119, 181, 0.08) 0%, transparent 50%), radial-gradient(circle at 70% 60%, rgba(37, 211, 102, 0.06) 0%, transparent 50%); animation: glowMove 15s ease-in-out infinite alternate; z-index: 0; pointer-events: none; }
+        @keyframes glowMove { 0% { transform: translate(0, 0); } 100% { transform: translate(-5%, -3%); } }
+        nav { position: fixed; top: 0; width: 100%; z-index: 100; padding: 1rem 2rem; background: rgba(10, 10, 10, 0.8); backdrop-filter: blur(20px); border-bottom: 1px solid rgba(255,255,255,0.05); display: flex; justify-content: space-between; align-items: center; }
+        .logo { font-size: 1.3rem; font-weight: 800; background: linear-gradient(135deg, #0077B5, #25D366); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+        .nav-cta { background: #25D366; color: #000; padding: 0.5rem 1.2rem; border-radius: 50px; text-decoration: none; font-weight: 700; font-size: 0.85rem; transition: all 0.3s; }
+        .nav-cta:hover { background: #1ebe5a; transform: scale(1.05); }
+        .hero { position: relative; z-index: 1; min-height: 100vh; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; padding: 8rem 2rem 4rem; }
+        .badge { display: inline-flex; align-items: center; gap: 0.5rem; background: rgba(0, 119, 181, 0.15); border: 1px solid rgba(0, 119, 181, 0.3); padding: 0.4rem 1rem; border-radius: 50px; font-size: 0.8rem; color: #4da6d9; margin-bottom: 2rem; font-weight: 600; }
+        .badge::before { content: "⚡"; }
+        .hero h1 { font-size: clamp(2.5rem, 7vw, 5rem); font-weight: 900; line-height: 1.1; margin-bottom: 1.5rem; max-width: 800px; }
+        .hero h1 .highlight { background: linear-gradient(135deg, #0077B5, #00a0dc); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+        .hero h1 .highlight-green { background: linear-gradient(135deg, #25D366, #5afa8e); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+        .hero p { font-size: 1.2rem; color: #999; max-width: 600px; margin-bottom: 2.5rem; }
+        .cta-group { display: flex; flex-direction: column; align-items: center; gap: 1rem; }
+        .cta-main { display: inline-flex; align-items: center; gap: 0.75rem; background: #25D366; color: #000; padding: 1rem 2.5rem; border-radius: 60px; text-decoration: none; font-weight: 800; font-size: 1.15rem; transition: all 0.3s; box-shadow: 0 0 40px rgba(37, 211, 102, 0.3); animation: pulse 2.5s ease-in-out infinite; }
+        .cta-main:hover { transform: translateY(-3px) scale(1.03); box-shadow: 0 0 60px rgba(37, 211, 102, 0.5); }
+        @keyframes pulse { 0%, 100% { box-shadow: 0 0 40px rgba(37, 211, 102, 0.3); } 50% { box-shadow: 0 0 60px rgba(37, 211, 102, 0.5); } }
+        .cta-sub { font-size: 0.85rem; color: #666; }
+        .cta-sub strong { color: #25D366; }
+        .social-proof { position: relative; z-index: 1; padding: 2rem; display: flex; justify-content: center; gap: 3rem; flex-wrap: wrap; border-top: 1px solid rgba(255,255,255,0.05); border-bottom: 1px solid rgba(255,255,255,0.05); margin: 0 auto; max-width: 900px; }
+        .proof-item { text-align: center; }
+        .proof-item .number { font-size: 2rem; font-weight: 900; background: linear-gradient(135deg, #0077B5, #25D366); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+        .proof-item .label { font-size: 0.85rem; color: #666; }
+        .section-title { text-align: center; font-size: clamp(1.8rem, 4vw, 2.8rem); font-weight: 800; margin-bottom: 1rem; }
+        .section-subtitle { text-align: center; color: #777; max-width: 600px; margin: 0 auto 3rem; font-size: 1.05rem; }
+        .problems { position: relative; z-index: 1; padding: 6rem 2rem; max-width: 900px; margin: 0 auto; }
+        .problem-list { display: grid; gap: 1rem; }
+        .problem-item { display: flex; align-items: flex-start; gap: 1rem; background: rgba(255, 50, 50, 0.04); border: 1px solid rgba(255, 50, 50, 0.1); padding: 1.2rem 1.5rem; border-radius: 12px; transition: all 0.3s; }
+        .problem-item:hover { border-color: rgba(255, 50, 50, 0.25); }
+        .problem-icon { font-size: 1.5rem; flex-shrink: 0; margin-top: 2px; }
+        .problem-item h3 { font-size: 1rem; font-weight: 700; color: #ddd; }
+        .problem-item p { font-size: 0.9rem; color: #888; margin-top: 0.25rem; }
+        .solution { position: relative; z-index: 1; padding: 6rem 2rem; max-width: 1100px; margin: 0 auto; }
+        .features-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem; }
+        .feature-card { background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.07); border-radius: 16px; padding: 2rem; transition: all 0.4s; }
+        .feature-card:hover { border-color: rgba(0, 119, 181, 0.3); transform: translateY(-4px); background: rgba(0, 119, 181, 0.05); }
+        .feature-icon { width: 48px; height: 48px; border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 1.5rem; margin-bottom: 1.2rem; background: rgba(0, 119, 181, 0.1); }
+        .feature-card h3 { font-size: 1.15rem; font-weight: 700; margin-bottom: 0.5rem; color: #fff; }
+        .feature-card p { font-size: 0.9rem; color: #888; }
+        .process { position: relative; z-index: 1; padding: 6rem 2rem; max-width: 700px; margin: 0 auto; }
+        .step { display: flex; gap: 1.5rem; margin-bottom: 2.5rem; align-items: flex-start; }
+        .step-number { flex-shrink: 0; width: 48px; height: 48px; border-radius: 50%; background: linear-gradient(135deg, #0077B5, #25D366); display: flex; align-items: center; justify-content: center; font-weight: 900; font-size: 1.2rem; color: #000; }
+        .step h3 { font-size: 1.1rem; font-weight: 700; color: #fff; }
+        .step p { font-size: 0.9rem; color: #888; margin-top: 0.3rem; }
+        .testimonials { position: relative; z-index: 1; padding: 6rem 2rem; max-width: 1100px; margin: 0 auto; }
+        .testimonial-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem; }
+        .testimonial-card { background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.07); border-radius: 16px; padding: 2rem; }
+        .stars { color: #f5c518; font-size: 0.9rem; margin-bottom: 1rem; letter-spacing: 2px; }
+        .testimonial-card p { font-size: 0.95rem; color: #bbb; font-style: italic; margin-bottom: 1.2rem; }
+        .testimonial-author { display: flex; align-items: center; gap: 0.75rem; }
+        .author-avatar { width: 40px; height: 40px; border-radius: 50%; background: linear-gradient(135deg, #0077B5, #25D366); display: flex; align-items: center; justify-content: center; font-weight: 800; font-size: 0.85rem; color: #000; }
+        .author-info .name { font-weight: 700; font-size: 0.9rem; color: #ddd; }
+        .author-info .role { font-size: 0.8rem; color: #666; }
+        .faq { position: relative; z-index: 1; padding: 6rem 2rem; max-width: 700px; margin: 0 auto; }
+        .faq-item { border-bottom: 1px solid rgba(255,255,255,0.07); padding: 1.5rem 0; }
+        .faq-question { display: flex; justify-content: space-between; align-items: center; cursor: pointer; font-weight: 700; font-size: 1.05rem; color: #ddd; gap: 1rem; }
+        .faq-question::after { content: "+"; font-size: 1.5rem; color: #0077B5; transition: transform 0.3s; flex-shrink: 0; }
+        .faq-item.active .faq-question::after { transform: rotate(45deg); }
+        .faq-answer { max-height: 0; overflow: hidden; transition: max-height 0.4s ease, padding 0.4s ease; color: #888; font-size: 0.95rem; }
+        .faq-item.active .faq-answer { max-height: 200px; padding-top: 1rem; }
+        .final-cta { position: relative; z-index: 1; padding: 6rem 2rem; text-align: center; }
+        .final-cta-box { background: linear-gradient(135deg, rgba(0,119,181,0.1), rgba(37,211,102,0.1)); border: 1px solid rgba(37,211,102,0.2); border-radius: 24px; padding: 4rem 2rem; max-width: 700px; margin: 0 auto; }
+        .final-cta-box h2 { font-size: clamp(1.8rem, 4vw, 2.5rem); font-weight: 900; margin-bottom: 1rem; }
+        .final-cta-box p { color: #999; margin-bottom: 2rem; font-size: 1.05rem; }
+        footer { position: relative; z-index: 1; text-align: center; padding: 3rem 2rem; border-top: 1px solid rgba(255,255,255,0.05); color: #444; font-size: 0.85rem; }
+        .float-wa { position: fixed; bottom: 2rem; right: 2rem; z-index: 999; width: 60px; height: 60px; background: #25D366; border-radius: 50%; display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 20px rgba(37,211,102,0.4); transition: all 0.3s; text-decoration: none; }
+        .float-wa:hover { transform: scale(1.1); box-shadow: 0 6px 30px rgba(37,211,102,0.6); }
+        .float-wa svg { width: 32px; height: 32px; fill: #fff; }
+        @media (max-width: 768px) { nav { padding: 0.8rem 1rem; } .logo { font-size: 1.1rem; } .social-proof { gap: 1.5rem; } .cta-main { padding: 0.9rem 2rem; font-size: 1rem; } .features-grid, .testimonial-grid { grid-template-columns: 1fr; } }
+    </style>
+</head>
+<body>
+<div class="bg-glow"></div>
+<nav>
+    <div class="logo">MarcaPersonal x10</div>
+    <a href="https://chat.whatsapp.com/GOEvAs7j7fe5vbPguziR4R" target="_blank" class="nav-cta">Unirme gratis →</a>
+</nav>
+<section class="hero">
+    <div class="badge">Comunidad gratuita — LinkedIn + IA</div>
+    <h1>Haz crecer tu <span class="highlight">LinkedIn</span> con <span class="highlight-green">Inteligencia Artificial</span></h1>
+    <p>Aprende las estrategias, prompts y frameworks que están usando los Top Voices para multiplicar su alcance, atraer oportunidades y construir una marca personal imparable.</p>
+    <div class="cta-group">
+        <a href="https://chat.whatsapp.com/GOEvAs7j7fe5vbPguziR4R" target="_blank" class="cta-main">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            Unirme a la Comunidad
+        </a>
+        <p class="cta-sub">✅ 100% gratis · <strong>+500 miembros</strong> ya adentro</p>
+    </div>
+</section>
+<div class="social-proof">
+    <div class="proof-item"><div class="number">500+</div><div class="label">Miembros activos</div></div>
+    <div class="proof-item"><div class="number">50+</div><div class="label">Prompts compartidos</div></div>
+    <div class="proof-item"><div class="number">10x</div><div class="label">Más alcance en LinkedIn</div></div>
+</div>
+<section class="problems">
+    <h2 class="section-title">¿Te suena familiar?</h2>
+    <p class="section-subtitle">La mayoría de profesionales en LinkedIn enfrenta estos problemas todos los días.</p>
+    <div class="problem-list">
+        <div class="problem-item"><span class="problem-icon">😩</span><div><h3>Publicas y nadie interactúa</h3><p>Inviertes tiempo escribiendo posts pero apenas recibes likes o comentarios.</p></div></div>
+        <div class="problem-item"><span class="problem-icon">🧠</span><div><h3>No sabes qué publicar</h3><p>Te quedas mirando la pantalla sin ideas y terminas no publicando nada.</p></div></div>
+        <div class="problem-item"><span class="problem-icon">🤖</span><div><h3>Usas IA pero suena genérico</h3><p>ChatGPT te genera textos que parecen escritos por un robot, sin tu voz ni autenticidad.</p></div></div>
+        <div class="problem-item"><span class="problem-icon">⏰</span><div><h3>No tienes tiempo para crear contenido</h3><p>Entre el trabajo y la vida, LinkedIn queda siempre para "mañana".</p></div></div>
+    </div>
+</section>
+<section class="solution">
+    <h2 class="section-title">Lo que vas a encontrar adentro</h2>
+    <p class="section-subtitle">Una comunidad que te da las herramientas, el sistema y el apoyo para crecer en LinkedIn con IA.</p>
+    <div class="features-grid">
+        <div class="feature-card"><div class="feature-icon">🎯</div><h3>Prompts probados que funcionan</h3><p>Accede a prompts testeados que generan posts con tu voz, no texto genérico. Copia, adapta y publica.</p></div>
+        <div class="feature-card"><div class="feature-icon">📈</div><h3>Frameworks de crecimiento</h3><p>Aprende los sistemas que usan los creadores Top Voice para pasar de 0 a miles de seguidores.</p></div>
+        <div class="feature-card"><div class="feature-icon">🤝</div><h3>Networking real</h3><p>Conecta con profesionales que están construyendo su marca personal. Apóyense, colaboren, crezcan juntos.</p></div>
+        <div class="feature-card"><div class="feature-icon">🔥</div><h3>Contenido diario de valor</h3><p>Tips, tendencias, herramientas nuevas de IA y casos de éxito compartidos todos los días.</p></div>
+        <div class="feature-card"><div class="feature-icon">⚡</div><h3>De 0 a consistente en 30 días</h3><p>Con el método de la comunidad, vas a poder publicar todos los días sin bloqueo creativo.</p></div>
+        <div class="feature-card"><div class="feature-icon">🧩</div><h3>Herramientas de IA curadas</h3><p>No pierdas tiempo probando 100 tools. Te compartimos solo las que realmente funcionan para LinkedIn.</p></div>
+    </div>
+</section>
+<section class="process">
+    <h2 class="section-title">Así de fácil es empezar</h2>
+    <p class="section-subtitle">En 3 pasos ya vas a estar creando contenido que genera oportunidades.</p>
+    <div class="step"><div class="step-number">1</div><div><h3>Únete a la comunidad</h3><p>Haz clic en el botón, entra al grupo de WhatsApp y preséntate. Es gratis y toma 10 segundos.</p></div></div>
+    <div class="step"><div class="step-number">2</div><div><h3>Accede a los recursos</h3><p>Revisa los prompts anclados, frameworks y guías. Elige tu primer template y adáptalo a tu perfil.</p></div></div>
+    <div class="step"><div class="step-number">3</div><div><h3>Publica y crece</h3><p>Lanza tu primer post con IA, recibe feedback de la comunidad y mira cómo tu LinkedIn empieza a despegar.</p></div></div>
+</section>
+<section class="testimonials">
+    <h2 class="section-title">Lo que dicen los miembros</h2>
+    <p class="section-subtitle">Profesionales reales que están transformando su presencia en LinkedIn.</p>
+    <div class="testimonial-grid">
+        <div class="testimonial-card"><div class="stars">★★★★★</div><p>"En 2 semanas pasé de 200 a 1.500 impresiones por post. Los prompts de la comunidad son oro puro."</p><div class="testimonial-author"><div class="author-avatar">MC</div><div class="author-info"><div class="name">María C.</div><div class="role">Consultora de Marketing</div></div></div></div>
+        <div class="testimonial-card"><div class="stars">★★★★★</div><p>"Por fin mis posts suenan a mí y no a un robot. La clave fue aprender a promptear bien con los frameworks del grupo."</p><div class="testimonial-author"><div class="author-avatar">JR</div><div class="author-info"><div class="name">Jorge R.</div><div class="role">Desarrollador de Software</div></div></div></div>
+        <div class="testimonial-card"><div class="stars">★★★★★</div><p>"Me llegaron 3 propuestas de trabajo en un mes desde que empecé a publicar consistentemente. Increíble comunidad."</p><div class="testimonial-author"><div class="author-avatar">LP</div><div class="author-info"><div class="name">Laura P.</div><div class="role">Product Manager</div></div></div></div>
+    </div>
+</section>
+<section class="faq">
+    <h2 class="section-title">Preguntas frecuentes</h2>
+    <p class="section-subtitle">Todo lo que necesitas saber antes de unirte.</p>
+    <div class="faq-item"><div class="faq-question">¿Es realmente gratis?</div><div class="faq-answer">Sí, 100% gratis. La comunidad de WhatsApp es abierta y sin costo. Queremos que todos tengan acceso a estas herramientas.</div></div>
+    <div class="faq-item"><div class="faq-question">¿Necesito saber de IA para unirme?</div><div class="faq-answer">No. Compartimos todo desde lo más básico. Si sabes usar WhatsApp y LinkedIn, estás listo.</div></div>
+    <div class="faq-item"><div class="faq-question">¿Qué herramientas de IA usan?</div><div class="faq-answer">Principalmente ChatGPT, Claude y herramientas especializadas para LinkedIn. Compartimos tutoriales y prompts para todas.</div></div>
+    <div class="faq-item"><div class="faq-question">¿Cada cuánto publican contenido en el grupo?</div><div class="faq-answer">Todos los días. Hay tips, prompts nuevos, análisis de posts virales y sesiones de feedback semanales.</div></div>
+    <div class="faq-item"><div class="faq-question">¿Puedo unirme si no tengo muchos seguidores?</div><div class="faq-answer">¡Claro! De hecho, es el mejor momento para entrar. Te vamos a ayudar a construir tu base desde cero.</div></div>
+</section>
+<section class="final-cta">
+    <div class="final-cta-box">
+        <h2>¿Listo para hacer crecer tu <span style="color:#0077B5;">LinkedIn</span>?</h2>
+        <p>Únete ahora a la comunidad y empieza a construir tu marca personal con IA hoy mismo.</p>
+        <a href="https://chat.whatsapp.com/GOEvAs7j7fe5vbPguziR4R" target="_blank" class="cta-main">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            Unirme a la Comunidad Gratis
+        </a>
+    </div>
+</section>
+<footer><p>© 2026 MarcaPersonal x10 — Hecho con ❤️ y con IA</p></footer>
+<a href="https://chat.whatsapp.com/GOEvAs7j7fe5vbPguziR4R" target="_blank" class="float-wa" aria-label="Unirse al WhatsApp"><svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg></a>
+<script>
+document.querySelectorAll('.faq-question').forEach(q => {
+    q.addEventListener('click', () => {
+        const item = q.parentElement;
+        document.querySelectorAll('.faq-item').forEach(i => { if (i !== item) i.classList.remove('active'); });
+        item.classList.toggle('active');
+    });
+});
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) { entry.target.style.opacity = '1'; entry.target.style.transform = 'translateY(0)'; }
+    });
+}, { threshold: 0.1 });
+document.querySelectorAll('.feature-card, .problem-item, .step, .testimonial-card, .faq-item').forEach(el => {
+    el.style.opacity = '0'; el.style.transform = 'translateY(20px)'; el.style.transition = 'all 0.6s ease'; observer.observe(el);
+});
+</script>
+</body>
+</html>
